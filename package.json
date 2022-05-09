@@ -1,0 +1,17 @@
+{
+  "name": "trendy-e-commerc-app",
+  "version": "1.0.0",
+  "description": "simple e-commerce application",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --no-minify"
+  },
+  "author": "Khin Su Wai",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.22.4",
+    "parcel-bundler": "^1.12.5",
+    "regenerator-runtime": "^0.13.9"
+  }
+}

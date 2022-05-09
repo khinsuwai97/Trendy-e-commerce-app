@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shopping.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/b98d766df3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>E-Commerce App</title>
+
+    <script type="module" defer src="./src/script.js"></script>
+  </head>
+  <body>
+    <header class="sticky header">
+      <h1 class="heading-title">TRENDY</h1>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link nav-item" href="#show-home">HOME</a></li>
+          <li>
+            <a class="main-nav-link nav-item" href="#show-product">PRODUCTS</a>
+          </li>
+
+          <!-- <ul class="main-nav-list"> -->
+          <!-- <li>
+            <div class="search-form">
+              <button class="main-nav-btn btn-submit">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+              <input
+                type="text"
+                class="search_field"
+                placeholder="Search products"
+              />
+            </div>
+          </li> -->
+
+          <li>
+            <button class="main-nav-btn nav-item">
+              <span>Sign in</span>
+              <ion-icon name="person-outline"></ion-icon>
+            </button>
+          </li>
+
+          <li>
+            <button class="main-nav-btn nav-item wishlist--btn">
+              <!-- <i class="fa-solid fa-heart"></i> -->
+              <span>Wishlist</span>
+              <ion-icon class="heart-icon" name="heart"></ion-icon>
+            </button>
+          </li>
+          <li>
+            <button class="main-nav-btn nav-item btn-bag">
+              <span>My Bag</span>
+
+              <ion-icon name="bag-handle-outline"></ion-icon>
+              <div class="cart-item">0</div>
+            </button>
+          </li>
+
+          <!-- </ul> -->
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero sticky" id="show-home">
+        <div class="hero">
+          <div class="background-img">
+            <img
+              srcset="Img/background.jpg"
+              alt="woman smiling"
+              class="hero-img"
+            />
+
+            <div class="heading-text-box">
+              <p class="pirmary-heading">NEW SEASON ARRIVALS</p>
+              <p class="heading-text">CHECK OUT All THE TRENDS</p>
+            </div>
+            <button class="btn--text btn--scroll-to">
+              SHOP NOW &DownArrow;
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section-products" id="show-product">
+        <div class="container">
+          <h2 class="secondary-heading">Latest Products</h2>
+          <div class="btn-container">
+            <button class="product-btn">All</button>
+            <button class="product-btn">Men's clothing</button>
+            <button class="product-btn">Women's clothing</button>
+            <button class="product-btn">Jewelery</button>
+            <button class="product-btn">Electronics</button>
+          </div>
+        </div>
+        <div class="container grid product-container-main">
+          <!-- produt start -->
+          <!-- <div class="product-container">
+            <div class="product-cover">
+              <img
+                src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                alt="man bag"
+                class="product-photo"
+              />
+            </div>
+            <div class="product-content">
+              <p class="title-text">
+                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+              </p>
+
+              <p class="price">
+                $
+                <span>12</span>
+              </p>
+
+              <p class="rating">
+                Rating 3.9
+                <i class="fa-solid fa-star"></i>
+              </p>
+
+              <button class="shop-btn">SHOP</button>
+
+              <button class="wishlist-btn">
+                <ion-icon class="heart-icon" name="heart"></ion-icon>
+              </button>
+            </div>
+          </div> -->
+          <!-- product end -->
+        </div>
+      </section>
+      <section class="news-letter">
+        <div class="container">
+          <div class="news-letter-text">
+            <h2 class="news-lettet-heading">keep updated with us</h2>
+            <p class="news-letter-subtext">
+              Subscribe to our newsletter to enjoy first dibs
+              <br />
+              on our new arrivals, special promotions,
+              <br />
+              online exclusives, and trend-focused articles.
+            </p>
+
+            <form class="news-letter-form">
+              <input
+                type="text"
+                class="news-letter-fields"
+                placeholder="Sing up for our newsletter"
+              />
+              <button class="subscribe-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container grid--footer">
+        <div class="logo-col">
+          <p class="footer-heading">Follow us</p>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-tiktok"></ion-icon>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright">
+            Copyright &copy;
+            <span class="year">2027</span>
+            by TRENDY, Inc.
+            <br />
+            All rights reserved.
+          </p>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Shopping with us</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Shipping & Tracking</a></li>
+            <li><a class="footer-link" href="#">Returns & Exchanges</a></li>
+            <li><a class="footer-link" href="#">Promotions</a></li>
+            <li><a class="footer-link" href="#">Student Discount</a></li>
+            <li><a class="footer-link" href="#">Size Guide</a></li>
+            <li>
+              <a class="footer-link" href="#">Personal Styling Service</a>
+            </li>
+            <li><a class="footer-link" href="#">Gift Boxes</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Customer care</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Order Status</a></li>
+            <li><a class="footer-link" href="#">Privilege Membership</a></li>
+            <li><a class="footer-link" href="#">Contact Us</a></li>
+            <li><a class="footer-link" href="#">FAQ</a></li>
+            <li><a class="footer-link" href="#">Counterfeit Education</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">About us</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Store Locator</a></li>
+            <li><a class="footer-link" href="#">Privilege Membership</a></li>
+            <li><a class="footer-link" href="#">Sustainability</a></li>
+            <li>
+              <a class="footer-link" href="#">Franchising Opportunities</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Virtual Store Experience</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="account-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <div class="cta-text-box hidden">
+      <button class="cta-btn-close">
+        <ion-icon class="btn-circle" name="close-circle-outline"></ion-icon>
+      </button>
+      <h2 class="cta-heading">TRENDY</h2>
+      <p class="cta-text">
+        receive 10% off
+        <br />
+        your first order
+      </p>
+      <form class="cta-form">
+        <div>
+          <input
+            class="email-input"
+            id="email"
+            type="email"
+            placeholder="Eamil Address"
+            name="email"
+            required
+          />
+        </div>
+
+        <div>
+          <input
+            class="password-input"
+            id="password"
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+        </div>
+        <button class="btn-sign-in btn--form">Sign In</button>
+        <a class="password-link" href="#">Forgot your password?</a>
+        <button class="btn-account btn--form">Create An Account</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="product-detail">
+      <!-- <div class="product-detil-list">
+        <button class="btn-close-detail">
+          <ion-icon
+            class="btn-circle-detail"
+            name="close-circle-outline"
+          ></ion-icon>
+        </button>
+        <div class="image-box">
+          <img
+            src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+            alt="man bag"
+            class="product-photo-detail"
+          />
+        </div>
+        <div class="product-list">
+          <p class="product-category">Men's clothing</p>
+          <p class="product-title">Men hand bag</p>
+          <p class="product-rating">
+            Rating 3.9
+            <i class="fa-solid fa-star"></i>
+          </p>
+          <p class="product-price">
+            $
+            <span>12</span>
+          </p>
+          <p class="product-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            aliquam possimus amet vel iste voluptates nulla dicta eum totam
+            porro consectetur quae, optio quidem, ea ex deleniti, omnis dolorum
+            veritatis?
+          </p>
+          <div class="btn-cart">
+            <button class="add-to-cart add-to-bag">Add to Bag</button>
+            <button class="add-to-cart go-to-bag">Go to Bag</button>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <div class="bag-overlay">
+      <div class="bag">
+        <button class="btn-close-bag">
+          <ion-icon
+            class="btn-circle-bag"
+            name="close-circle-outline"
+          ></ion-icon>
+        </button>
+        <h2>Your Shopping Bag</h2>
+        <div class="bag-content">
+          <!-- <div class="bag-item">
+            <div class="add-to-function">
+              <img
+                class="bag-img"
+                src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                alt="product"
+              />
+              <div class="add-to-detail">
+                <p class="add-to-title add-to-item">
+                  Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+                </p>
+                <p class="add-to-price add-to-item">
+                  $
+                  <span class="add-to-bag-price">12</span>
+                </p>
+                <button class="trash-btn">
+                  <ion-icon
+                    class="bag-trash-btn"
+                    name="trash-outline"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+
+            <div class="qty">
+              <p class="quantity">Qty</p>
+              <i class="fas fa-chevron-up"></i>
+
+              <p class="qty-amount">1</p>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            end bag 
+          </div> -->
+        </div>
+        <div class="bag-footer">
+          <h3>
+            Your Total: $
+            <span class="cart-total">0</span>
+          </h3>
+          <button class="clear-bag banner-btn">Clear Bag</button>
+        </div>
+      </div>
+    </div>
+    <!-- end shopping bag -->
+    <!-- wishlist -->
+    <div class="wishlist-overlay">
+      <div class="wishlist">
+        <button class="btn-close-bag btn-close-wishlist">
+          <ion-icon
+            class="btn-circle-bag"
+            name="close-circle-outline"
+          ></ion-icon>
+        </button>
+        <h2>Your Wishlist</h2>
+        <div class="bag-content wishlist-content">
+          <!-- <div class="bag-item wishlist-item">
+            <div class="wishlist-function">
+              <img
+                class="bag-img"
+                src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                alt="product"
+              />
+              <div class="add-to-detail">
+                <p class="add-to-title add-to-item">
+                  Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+                </p>
+                <p class="add-to-price add-to-item">
+                  $
+                  <span class="add-to-bag-price">12</span>
+                </p>
+                <button class="trash-btn">
+                  <ion-icon
+                    class="bag-trash-btn"
+                    name="trash-outline"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="bag-footer wishlist-footer">
+          <button class="clear-cart banner-btn clear-wishlist-btn">
+            Clear
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
