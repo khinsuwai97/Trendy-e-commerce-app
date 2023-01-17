@@ -1,35 +1,34 @@
-const productContainer = document.querySelector(".product-container-main");
-const productDetailContainer = document.querySelector(".product-detail");
-
+const productContainer = document.querySelector('.product-container-main');
+const productDetailContainer = document.querySelector('.product-detail');
 
 class ShopProduct {
   // show product detail when user click shop btn
   showDetail(products) {
     this.products = products;
 
-    productContainer.addEventListener("click", (e) => {
-      const shopBtn = e.target.closest(".shop-btn");
+    productContainer.addEventListener('click', (e) => {
+      const shopBtn = e.target.closest('.shop-btn');
       if (!shopBtn) return;
       const btnId = +shopBtn.dataset.id;
 
       const detail = this.products.find((product) => product.id === btnId);
       this.showProductDetail(detail);
       const detailList = productDetailContainer.querySelector(
-        ".product-detil-list"
+        '.product-detil-list'
       );
 
-      const btnClose = detailList.querySelector(".btn-close-detail");
+      const btnClose = detailList.querySelector('.btn-close-detail');
 
-      detailList.classList.add("show-detail");
+      detailList.classList.add('show-detail');
 
-      btnClose.addEventListener("click", () => {
-        detailList.classList.remove("show-detail");
+      btnClose.addEventListener('click', () => {
+        detailList.classList.remove('show-detail');
       });
     });
   }
 
   showProductDetail(product) {
-    productDetailContainer.innerHTML = "";
+    productDetailContainer.innerHTML = '';
     const markup = `
     <div class="product-detil-list">
         <button class="btn-close-detail">
@@ -67,7 +66,7 @@ class ShopProduct {
         </div>
       </div>
     `;
-    productDetailContainer.insertAdjacentHTML("afterbegin", markup);
+    productDetailContainer.insertAdjacentHTML('afterbegin', markup);
   }
 }
 

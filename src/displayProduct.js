@@ -1,17 +1,17 @@
-const productContainer = document.querySelector(".product-container-main");
-const btnContainer = document.querySelector(".btn-container");
+const productContainer = document.querySelector('.product-container-main');
+const btnContainer = document.querySelector('.btn-container');
 
 class ShowProduct {
   // show product according to user select;
   renderSelectedProducts(products) {
-    btnContainer.addEventListener("click", (e) => {
-      const btn = e.target.closest(".product-btn");
+    btnContainer.addEventListener('click', (e) => {
+      const btn = e.target.closest('.product-btn');
 
       const selectedProdcucts = products.filter(
         (product) => product.category === btn.textContent.toLowerCase()
       );
-      productContainer.innerHTML = "";
-      if (btn.textContent === "All") {
+      productContainer.innerHTML = '';
+      if (btn.textContent === 'All') {
         this.displayproducts(products);
       } else {
         this.displayproducts(selectedProdcucts);
@@ -49,7 +49,7 @@ class ShowProduct {
 
               <button class="wishlist-btn" data-id="${product.id}">
                 <ion-icon data-id="${product.id}" class="${
-        !editFlag ? ".heart-icon.selected" : "heart-icon"
+        !editFlag ? '.heart-icon.selected' : 'heart-icon'
       }" name="heart"></ion-icon>
               </button>
             </div>
@@ -57,7 +57,7 @@ class ShowProduct {
 
     `;
 
-      productContainer.insertAdjacentHTML("beforeend", markup);
+      productContainer.insertAdjacentHTML('beforeend', markup);
     });
   }
 }

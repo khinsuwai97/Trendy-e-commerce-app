@@ -10,7 +10,7 @@ FONT SIZE SYSTEM (px)
 #343a40
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   line-height: 1;
   /* color: #555; */
   font-weight: 400;
@@ -145,7 +145,7 @@ body {
   width: 4.8rem;
 }
 
-.icon-mobile-nav[name="close-outline"] {
+.icon-mobile-nav[name='close-outline'] {
   display: none;
 }
 
@@ -424,11 +424,11 @@ input[type="text"]::placeholder {
   background-color: #eee;
 }
 
-input[type="text"] {
+input[type='text'] {
   text-indent: 1px;
 }
 
-input[type="text"]::placeholder {
+input[type='text']::placeholder {
   color: #717579;
   padding-left: -30px;
 }
@@ -754,4 +754,47 @@ input[type="text"]::placeholder {
 }
 .btn-circle-detail {
   font-size: 3rem;
+}
+
+/* loading */
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  background-image: linear-gradient(#000 16px, transparent 0),
+    linear-gradient(#343a40 16px, transparent 0),
+    linear-gradient(#343a40 16px, transparent 0),
+    linear-gradient(#000 16px, transparent 0);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: left top, left bottom, right top, right bottom;
+  animation: rotate 1s linear infinite;
+  visibility: hidden;
+}
+.loader.display {
+  visibility: visible;
+}
+@keyframes rotate {
+  0% {
+    width: 64px;
+    height: 64px;
+    transform: rotate(0deg);
+  }
+  50% {
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+  }
+  100% {
+    width: 64px;
+    height: 64px;
+    transform: rotate(360deg);
+  }
 }
